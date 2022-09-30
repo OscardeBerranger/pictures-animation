@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.panneaux{
+    height: 100vh;
+    display: flex;
+}
+.panneau{
+    height: 100vh;
+    width: 100%;
+    flex: 1;
+    transition: 0.5s flex cubic-bezier(.52,1.04,.55,1.18);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.texthaut{
+    transform: translateY(-4vh);
+    transition: 0.5s cubic-bezier(.52,1.04,.55,1.18);
+    opacity: 0;
+}
+.textbas{
+    transform: translateY(4vh);
+    transition: 0.5s cubic-bezier(.52,1.04,.55,1.18);
+    opacity: 0;
+}
+.panneau:hover{
+    flex: 5;
+}
+.panneau:hover .texthaut{
+    opacity: 1;
+    transform: translateY(4vh);
+}
+.panneau:hover .textbas{
+    opacity: 1;
+    transform: translateY(-4vh);
+}
+.paysage1{
+    background-image: url('img/paysage1.jpg');
+}
+.paysage1 .textbas{
+    color: white;
+}
+.paysage2{
+    background-image: url('img/paysage2.jpg');
+}
+.paysage3{
+    background-image: url('img/paysage3.jpg');
+}
+.paysage3 .texthaut{
+    color: white;
+}
+.paysage4{
+    background-image: url('img/paysage4.jpg');
+}
+.paysage5{
+    background-image: url('img/paysage5.jpg');
+    color: white;
+}
